@@ -33,14 +33,14 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose up -d
 docker exec -it bitcoind /bin/bash
 
-# ruesct yazdığım yerlere kendi bilgilerinizi giriniz. (totalde 3 kısım)
-bitcoin-cli -testnet4 -rpcuser=ruesct -rpcpassword=ruesct -rpcport=5000 createwallet ruesct
+# ruesct yazdığım yere kendi bilginizi girin.
+bitcoin-cli -testnet4 -rpcuser=demo -rpcpassword=demo -rpcport=5000 createwallet ruesct
 
-# burada 2 kısma giriyoruz bilgilerimizi ve kaydediyoruz adresi.
-bitcoin-cli -testnet4 -rpcuser=ruesct -rpcpassword=ruesct -rpcport=5000 getnewaddress
+#ve kaydediyoruz adresi.
+bitcoin-cli -testnet4 -rpcuser=demo -rpcpassword=demo -rpcport=5000 getnewaddress
 ```
 
-> Sunucumuza çık gir yapalım.
+> exit diyerek çıkalım.
 
 ```console
 git clone https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet && cd rbo_indexer_testnet
